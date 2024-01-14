@@ -34,7 +34,6 @@ public class HotelsTestCases {
         APIBody.put("checkOut", checkOutDate);
         APIBody.put("roomsInfo", roomsInfo);
         APIBody.put("query", city);
-        APIBody.put("query", city);
         Response response = postSearchHotels.hotelSearch(APIBody.toString());
         postSearchHotels.verifySearch(response, 200);
 
